@@ -98,9 +98,26 @@ html {
     padding: 10px 25px 10px 21px;
     border-radius: 8px;
     border: none;
-    position: sticky;
-    z-index: 1000;
 
+}
+
+.sideSignin {
+    border: 1px solid #ff4613;
+    color: #ff4613;
+    background-color: white;
+    padding: 10px 25px 10px 21px;
+    border-radius: 8px;
+
+}
+
+.sideSignUp {
+    color: white;
+    background: #ff4613;
+    padding: 10px 25px 10px 21px;
+    border-radius: 8px;
+    border: none;
+
+    
 }
 
 #menu {
@@ -122,28 +139,35 @@ li:hover{
 }
 
 .sidebar  {
-    width: 35%;
+    width: 100%;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     right: -100%;
-    top: 12%;
+    top: 0;
     position: fixed;
-    z-index: 100;
-    padding-top: 3%;
+    padding-top: 15%;
     padding-bottom: 5%;
-    padding-left: 3%;
+    padding-left: 10%;
     padding-right: 3%;
     transition: .6s linear;
+    z-index: 100000;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
 
     
 }
 
+#menu_side {
+    margin-left: 80%;
+    color: #ff4613;
+}
+
 .sidebarOpen  {
-    right: 3%;
+    right: 0;
+    top: 0;
 }
 
 
@@ -164,7 +188,6 @@ li:hover{
     padding-right: 20%;
     position: relative;
 
-    /* background: url(./background_img.png) no-repeat center center; */
 
 }
 
@@ -183,10 +206,11 @@ li:hover{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
     overflow: hidden;
     pointer-events: none;
+    /* padding-bottom: 3%; */
 }
 
 .creative {
@@ -200,19 +224,21 @@ li:hover{
     text-align: center;
     color: white;
     margin-top: 10px;
-    line-height: 50px;
+    line-height: 38px;
 
 }
 
 
 .btn {
-    width: 400px;
+    width: 370px;
     height: 60px;
     background: orangered;
     border-radius: 20px;
     border: 0;
     font-size: large;
     color: white;
+    /* position: absolute; */
+    margin-bottom: 15%;
 }
 
 .secondBody {
@@ -223,6 +249,8 @@ li:hover{
     flex-direction: column;
     padding-left: 17%;
     padding-right: 17%;
+    position: absolute;
+    background: white;
 
 
 
@@ -254,7 +282,341 @@ li:hover{
     display: none;
  }
 
- .sidebar  {
+ /* .sidebar  {
     top: 8%;
- }
+ } */
 }
+
+
+
+@media(max-width:900px) {
+    #menu, .menuBox {
+       display: block;
+       color: #ff4613;
+    }
+    
+   
+    .navCenter{
+       display: none;
+    }
+   
+    /* .sidebar  {
+       top: 8%;
+    } */
+
+
+    .signup, .login {
+        display: none;
+    }
+   }
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    transition: all .2s linear ;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.top {
+    color: white;
+}
+
+.Back_top {
+    position: fixed;
+    bottom: 6%;
+    right: 6%;
+    color: white;
+    background: #ff4613;
+    padding: 10px 25px 12px 21px;
+    border-radius: 8px;
+    border: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+#caret {
+    margin-left: 50%;
+}
+
+
+
+
+
+.navCenter ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+#search {
+    color: #ff4613;
+
+}
+
+.navRight {
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+    align-items: center;
+}
+
+
+.logo {
+    color: #ff4613;
+    font-family: 'Courgette', cursive;
+}
+
+
+.login {
+    border: 1px solid #ff4613;
+    color: #ff4613;
+    background-color: white;
+    padding: 10px 25px 10px 21px;
+    border-radius: 8px;
+}
+
+.signup {
+    color: white;
+    background: #ff4613;
+    padding: 10px 25px 10px 21px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.sideSignin {
+    border: 1px solid #ff4613;
+    color: #ff4613;
+    background-color: white;
+    padding: 10px 25px 10px 21px;
+    border-radius: 8px;
+
+}
+
+.sideSignUp {
+    color: white;
+    background: #ff4613;
+    padding: 10px 25px 10px 21px;
+    border-radius: 8px;
+    border: none;
+
+    
+}
+
+#menu {
+    display: none;
+}
+
+
+li:hover{
+    color: #ff4613;
+
+}
+
+.login:hover {
+    background: #ff4613;
+    color: white;
+
+
+
+}
+
+.sidebar  {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    right: -100%;
+    top: 0;
+    position: fixed;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 3%;
+    transition: .6s linear;
+    z-index: 100000;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+
+    
+}
+
+#menu_side {
+    margin-left: 80%;
+    color: #ff4613;
+}
+
+.sidebarOpen  {
+    right: 0;
+    top: 0;
+}
+
+
+
+.sidebarOpen ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.firstBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: relative;
+
+
+}
+
+.menuBox {
+    padding: 9px;
+    background: #EEEEEE;
+    border-radius: 4px;
+    display: none;
+}
+
+
+
+#video-background{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    overflow: hidden;
+    pointer-events: none;
+    /* padding-bottom: 3%; */
+}
+
+.creative {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.yummyH3 {
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    line-height: 38px;
+
+}
+
+
+.btn {
+    width: 370px;
+    height: 60px;
+    background: orangered;
+    border-radius: 20px;
+    border: 0;
+    font-size: large;
+    color: white;
+    /* position: absolute; */
+    margin-bottom: 15%;
+}
+
+.secondBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    flex-direction: column;
+    padding-left: 17%;
+    padding-right: 17%;
+    position: absolute;
+    background: white;
+
+
+
+}
+
+.secondBodyh1 {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.secondBodyh3 {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 50px;
+
+}
+
+
+@media(max-width:1200px) {
+ #menu, .menuBox {
+    display: block;
+    color: #ff4613;
+ }
+ 
+
+ .navCenter{
+    display: none;
+ }
+
+ /* .sidebar  {
+    top: 8%;
+ } */
+}
+
+
+
+@media(max-width:900px) {
+    #menu, .menuBox {
+       display: block;
+       color: #ff4613;
+    }
+    
+   
+    .navCenter{
+       display: none;
+    }
+   
+    /* .sidebar  {
+       top: 8%;
+    } */
+
+
+    .signup, .login {
+        display: none;
+    }
+   }
